@@ -1,0 +1,53 @@
+:root {
+    --c1: #22466b;
+    --c2: #eca533;
+    --c3: #d2d2d2;
+    --fontfam1: "Roboto Mono", "SF Mono", "Fira Code" , "Fira Mono" ,monospace;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+body {
+    background-color:white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.header {
+    padding: 20px;
+    font-family: var(--fontfam1);
+    background-color: var(--c1);
+    color: var(--c2);
+    font-size: 200%;
+    display: flex;
+}
+
+.header ul {
+    display: inline-flex;
+    list-style: none;
+    margin-left: 1050px;
+}
+
+.header ul li {
+    padding: 0 15px;
+    display: flex;
+    margin-left: 25px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: var(--c3);
+    font-size: 80%;
+}
+
