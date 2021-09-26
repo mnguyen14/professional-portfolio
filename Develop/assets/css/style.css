@@ -3,6 +3,8 @@
     --c2: #eca533;
     --c3: #d2d2d2;
     --fontfam1: "Roboto Mono", "SF Mono", "Fira Code" , "Fira Mono" ,monospace;
+    --fontfam2: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --boxbr: 10px;
 }
 
 * {
@@ -13,15 +15,9 @@
 }
 
 body {
-    background-color:white;
-    color: black;
+    background-color: var(--c3);
     margin: 0;
     padding: 0;
-}
-
-.dark-mode {
-    background-color: black;
-    color: white;
 }
 
 .header {
@@ -29,25 +25,219 @@ body {
     font-family: var(--fontfam1);
     background-color: var(--c1);
     color: var(--c2);
-    font-size: 200%;
     display: flex;
 }
 
-.header ul {
-    display: inline-flex;
-    list-style: none;
-    margin-left: 1050px;
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+    font-family: var(--fontfam1);
 }
 
-.header ul li {
-    padding: 0 15px;
-    display: flex;
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    font-family: var(--fontfam1);
+    font-size: 20px;
+    margin-left: 950px;
+}
+
+.header nav ul li {
+    display: inline-block;
     margin-left: 25px;
 }
 
-.header ul li a {
-    text-decoration: none;
+.header nav ul li a {
     color: var(--c3);
-    font-size: 80%;
+    text-decoration: none;
 }
 
+.aboutme {
+    width: 80%;
+    margin-left: 20px;
+    display: flex;
+    margin-top: 25px;
+}
+
+.imgbox {
+    width: 300px;
+    height: 300px;
+    background-color: var(--c1);
+    padding: 14px;
+    border-radius: var(--boxbr);
+    border: solid;
+    border-color: var(--c2);
+}
+
+
+.aboutme img {
+    width: 270px;
+    height: 270px;
+    border-radius: 140px;
+    border: solid;
+    border-color: var(--c2);
+}
+
+.aboutmebox {
+    height: 300px;
+    background-color: var(--c1);
+    border-radius: var(--boxbr);
+    width: 1540px;
+    margin-left: 25px;
+    padding: 15px;
+    border: solid;
+    border-color: var(--c2);
+}
+
+/*use for all h1 that isn't in header*/
+.aboutme h1,
+.mywork h1 {
+    color: var(--c2);
+    font-family: var(--fontfam2);
+    font-size: 36px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
+
+.aboutme p {
+    margin-left: 25px;
+    margin-bottom: 25px;
+    color: var(--c3);
+    font-family: var(--fontfam1);
+    font-size: 18px;
+}
+
+.mywork {
+    background-color: var(--c1);
+    margin: 25px 20px 0 20px;
+    border-radius: var(--boxbr);
+    border: solid;
+    border-color: var(--c2);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.mywork a {
+    text-decoration: none;
+}
+
+.mywork section {
+    display: inline-block;
+}
+
+/* each new box default left is 20px, right side is 925px, each column down add 478 to top */
+.box1 {
+    font-family: var(--fontfam1);
+    font-size: 18px;
+    color: var(--c1);
+    background-color: var(--c3);
+    border-color: var(--c3);
+    width: 160px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.box2 {
+    font-family: var(--fontfam1);
+    font-size: 18px;
+    color: var(--c1);
+    background-color: var(--c3);
+    border-color: var(--c3);
+    width: 160px;
+    position: absolute;
+    top: 50px;
+    left: 925px;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.box3 {
+    font-family: var(--fontfam1);
+    font-size: 18px;
+    color: var(--c1);
+    background-color: var(--c3);
+    border-color: var(--c3);
+    width: 160px;
+    position: absolute;
+    top: 528px;
+    left: 20px;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.box4 {
+    font-family: var(--fontfam1);
+    font-size: 18px;
+    color: var(--c1);
+    background-color: var(--c3);
+    border-color: var(--c3);
+    width: 160px;
+    position: absolute;
+    top: 528px;
+    left: 925px;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.static,
+.gif {
+    height: 450px;
+    width: 800px;
+    margin: 0 75px 25px 25px;
+    border: solid;
+    border-color: var(--c3);
+}
+
+.static {
+    position: absolute;
+}
+
+.static:hover {
+    opacity: 0;
+    cursor:pointer;
+}
+
+.mywork img {
+    height: 450px;
+    width: 800px;
+    margin: 0 75px 25px 25px;
+    border: solid;
+    border-color: var(--c3);
+}
+
+footer {
+    padding: 15px;
+    font-family: var(--fontfam1);
+    background-color: var(--c1);
+    color: var(--c3);
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+footer ul li a {
+    color: var(--c3);
+    font-family: var(--fontfam1);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header nav {
+        margin-left: 20px;
+    }
+
+}

@@ -8,25 +8,110 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
+
 <body>
     <div class="header">
-        <h1>Matthew Nguyen</h1>
+        <h1 class = "name">Matthew Nguyen</h1>
         <nav>
             <ul>
                 <li>
-                    <a href="#my-work">My Work</a>
+                    <a href="#aboutme">About Me</a>
                 </li>
                 <li>
-                    <a href="#contact-me">Contact Me</a>
+                    <a href="#mywork">My Work</a>
                 </li>
                 <li>
-                    <a href="#resume">Resume</a>
+                    <a href="#contactme">Contact Me</a>
                 </li>
-            </ul>   
+                <li>
+                    <!--- no current resume, place holder link --->
+                    <a href="#">Resume</a>
+                </li>
+            </ul>
         </nav>
     </div>
 
-    <div>
-        
+    <div class="aboutme" id="aboutme">
+        <div class="imgbox">
+            <section class="circle">
+                <!--- will replace with a more professional photo when I get one --->
+                <img src="./assets/images/me.jpg" alt="A photo of me" class="float-left">
+            </section>
+        </div> 
+        <aside>
+            <div class="aboutmebox">
+                <h1>About Me</h1>
+                <p>
+                    I'm Matthew Nguyen, from Chicago, Illinois. I will be a full stack web developer and will come back to change my about me after I complete this bootcamp. Lorem ipsum dolor sit amet,. Donec laoreet tincidunt sollicitudin placerat. Proin sagittis turpis semper purus. Phasellus ut consectetur mauris mauris. Donec vel ligula eu erat.
+                </p>
+                <p>
+                    Sed dui lectus, varius eget. Nam sed magna urna et. Praesent eget eleifend libero tristique. Duis volutpat, dolor nec scelerisque. Phasellus in nisi diam malesuada.
+                </p>
+                <p>
+                    Donec mattis erat ac lorem. Vestibulum auctor augue ut enim. Curabitur ornare eleifend lectus, eget. Maecenas sodales, dui nec condimentum. Nam purus sapien, elementum nec.
+                </p>
+            </div>
+        </aside>
+    </div> 
+    
+    <div class="mywork" id="mywork">
+        <h1>My Work</h1>
+            
+        <section>
+            <div class="box1">
+                <h2>Code Refractor:</h2>
+                <h3>HTML & CSS</h3>
+            </div>
+
+            <a href="https://mnguyen14.github.io/seo-code-refractor/" target="_blank">
+                <img class="static" src="./assets/images/coderefractorpic.jpg" alt="picture of code refractor assignment website"><img class=gif src="./assets/images/coderefractor.gif" alt="a gif of the code refractor website clicking the jump links and scrolling through">
+            </a>
+
+            <!--- I am new to coding and do not have any other work. I will add to this add I go through this bootcamp. Photos and gifs of them being operated! --->
+            <div class="box2">
+                <h2>Cute Dog:</h2>
+                <h3>very cute</h3>
+            </div>
+
+            <a href="https://i.picsum.photos/id/237/800/450.jpg?hmac=o39ZjdmF8ZQVoij30Fp2_k2pRm382E_OeNz23FD4Qf0" target="_blank">
+                <img src="https://i.picsum.photos/id/237/800/450.jpg?hmac=o39ZjdmF8ZQVoij30Fp2_k2pRm382E_OeNz23FD4Qf0" alt="placeholder image of a dog"/>
+            </a>
+
+            <div class="box3">
+                <h2>Grayscale Walrus:</h2>
+                <h3>This image is grey</h3>
+            </div>
+
+            <a href="https://i.picsum.photos/id/1084/536/354.jpg?grayscale&hmac=Ux7nzg19e1q35mlUVZjhCLxqkR30cC-CarVg-nlIf60" target="_blank">
+                <img src="https://i.picsum.photos/id/1084/536/354.jpg?grayscale&hmac=Ux7nzg19e1q35mlUVZjhCLxqkR30cC-CarVg-nlIf60" alt="placeholder image of a walrus"/>
+            </a>
+
+            <div class="box4">
+                <h2>Blurry Cafe:</h2>
+                <h3>This is blurry</h3>
+            </div>
+
+            <a href=https://i.picsum.photos/id/1060/536/354.jpg?blur=2&hmac=0zJLs1ar00sBbW5Ahd_4zA6pgZqCVavwuHToO6VtcYY target="_blank">
+                <img src="https://i.picsum.photos/id/1060/536/354.jpg?blur=2&hmac=0zJLs1ar00sBbW5Ahd_4zA6pgZqCVavwuHToO6VtcYY" alt="blurry placeholder image of a cafe"/>
+            </a>
+
+
+        </section>
+    
     </div>
+
 </body>
+
+<footer id="contactme">
+    <ul>
+        <li>
+            (773)517-9414
+        </li>
+        <li>
+            matthewnguyen0814@gmail.com
+        </li>
+        <li>
+            <a href=https://github.com/mnguyen14 target="_blank">Github</a>
+        </li>
+    </ul>
+</footer>
