@@ -256,47 +256,81 @@ footer ul li a {
         height: 350px;
     }
 
-    /* add 478 to top each row down */
+    /* add 478 to top each row down and left 20px for even numbers */
     .box2 {
-        font-family: var(--fontfam1);
-        font-size: 18px;
-        color: var(--c1);
-        background-color: var(--c3);
-        border-color: var(--c3);
-        width: 160px;
-        position: absolute;
         top: 528px;
         left: 20px;
-        padding: 0 20px;
-        z-index: 1;
     }
     
     .box3 {
-        font-family: var(--fontfam1);
-        font-size: 18px;
-        color: var(--c1);
-        background-color: var(--c3);
-        border-color: var(--c3);
-        width: 160px;
-        position: absolute;
         top: 1006px;
-        left: 20px;
-        padding: 0 20px;
-        z-index: 1;
     }
     
     .box4 {
-        font-family: var(--fontfam1);
-        font-size: 18px;
-        color: var(--c1);
-        background-color: var(--c3);
-        border-color: var(--c3);
-        width: 160px;
-        position: absolute;
         top: 1484px;
         left: 20px;
-        padding: 0 20px;
-        z-index: 1;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .aboutmebox {
+        width: 705px;
+        height: 360px;
+    }
+    
+    .static,
+    .gif,
+    .mywork img {
+    height: 365px;
+    width: 650px;   
+    }
+
+    /* add 393 to top each row down add left 20px to each even number */
+    .box2 {
+        top: 443px;
+        left: 20px;
+    }
+
+    .box3 {
+        top: 836px;
+    }
+
+    .box4 {
+        top: 1229px;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header ul li {
+        margin-bottom: 10px;
+    }
+
+    .aboutmebox {
+        width: 521px;
+        height: 430px;
+    }
+
+    .static,
+    .gif,
+    .mywork img {
+    height: 365px;
+    width: 466px;   
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer ul li {
+        margin-bottom: 10px;
     }
 
 }
