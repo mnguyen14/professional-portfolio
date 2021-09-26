@@ -39,7 +39,7 @@ body {
     margin-right: 20px;
     font-family: var(--fontfam1);
     font-size: 20px;
-    margin-left: 950px;
+    margin-left: 800px;
 }
 
 .header nav ul li {
@@ -50,6 +50,11 @@ body {
 .header nav ul li a {
     color: var(--c3);
     text-decoration: none;
+}
+
+.header nav ul li a::before {
+    content: "⚫️";
+    font-family: cursive;
 }
 
 .aboutme {
@@ -238,6 +243,60 @@ footer ul li a {
 
     .header nav {
         margin-left: 20px;
+    }
+
+    .aboutme {
+        flex-direction: column;
+    }
+
+    .aboutmebox {
+        margin-left: 0px;
+        margin-top: 25px;
+        width: 850px;
+        height: 350px;
+    }
+
+    /* add 478 to top each row down */
+    .box2 {
+        font-family: var(--fontfam1);
+        font-size: 18px;
+        color: var(--c1);
+        background-color: var(--c3);
+        border-color: var(--c3);
+        width: 160px;
+        position: absolute;
+        top: 528px;
+        left: 20px;
+        padding: 0 20px;
+        z-index: 1;
+    }
+    
+    .box3 {
+        font-family: var(--fontfam1);
+        font-size: 18px;
+        color: var(--c1);
+        background-color: var(--c3);
+        border-color: var(--c3);
+        width: 160px;
+        position: absolute;
+        top: 1006px;
+        left: 20px;
+        padding: 0 20px;
+        z-index: 1;
+    }
+    
+    .box4 {
+        font-family: var(--fontfam1);
+        font-size: 18px;
+        color: var(--c1);
+        background-color: var(--c3);
+        border-color: var(--c3);
+        width: 160px;
+        position: absolute;
+        top: 1484px;
+        left: 20px;
+        padding: 0 20px;
+        z-index: 1;
     }
 
 }
