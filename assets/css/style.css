@@ -18,6 +18,9 @@ body {
     background-color: var(--c3);
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
 }
 
 .header {
@@ -72,6 +75,7 @@ body {
     border-radius: var(--boxbr);
     border: solid;
     border-color: var(--c2);
+    flex: 0 1 auto;
 }
 
 
@@ -81,6 +85,7 @@ body {
     border-radius: 140px;
     border: solid;
     border-color: var(--c2);
+    flex: 0 1 auto;
 }
 
 .aboutmebox {
@@ -92,6 +97,8 @@ body {
     padding: 15px;
     border: solid;
     border-color: var(--c2);
+    display: flex;
+    flex-direction: column;
 }
 
 /*use for all h1 that isn't in header*/
