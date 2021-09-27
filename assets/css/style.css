@@ -5,6 +5,8 @@
     --fontfam1: "Roboto Mono", "SF Mono", "Fira Code" , "Fira Mono" ,monospace;
     --fontfam2: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     --boxbr: 10px;
+    /* this is margin left for only things that are left most on page */
+    --mleft: 25px
 }
 
 * {
@@ -47,7 +49,7 @@ body {
 
 .header nav ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: var(--mleft);
 }
 
 .header nav ul li a {
@@ -93,7 +95,7 @@ body {
     background-color: var(--c1);
     border-radius: var(--boxbr);
     width: 1540px;
-    margin-left: 25px;
+    margin-left: var(--mleft);
     padding: 15px;
     border: solid;
     border-color: var(--c2);
@@ -107,13 +109,13 @@ body {
     color: var(--c2);
     font-family: var(--fontfam2);
     font-size: 36px;
-    margin-left: 25px;
+    margin-left: var(--mleft);
     margin-bottom: 25px;
     text-decoration: underline;
 }
 
 .aboutme p {
-    margin-left: 25px;
+    margin-left: var(--mleft);
     margin-bottom: 25px;
     color: var(--c3);
     font-family: var(--fontfam1);
@@ -133,10 +135,6 @@ body {
 
 .mywork a {
     text-decoration: none;
-}
-
-.mywork section {
-    display: inline-block;
 }
 
 /* each new box default left is 20px, right side is 925px, each column down add 478 to top */
@@ -234,7 +232,7 @@ footer {
 
 footer ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: var(--mleft);
 }
 
 footer ul li a {
@@ -258,7 +256,7 @@ footer ul li a {
 
     .aboutmebox {
         margin-left: 0px;
-        margin-top: 25px;
+        margin-top: var(--mleft);
         width: 850px;
         height: 350px;
     }
@@ -324,6 +322,7 @@ footer ul li a {
         height: 430px;
     }
 
+    /* same height so no alterations for text box are needed*/
     .static,
     .gif,
     .mywork img {
