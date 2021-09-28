@@ -194,8 +194,9 @@ body {
     z-index: 1;
 }
 
-.static,
-.gif {
+/* I understand that my initial work should be bigger than the rest but I do not like the way it looks and am willing to accept docked points for it to look more aesthetically 
+pleasing to my eyes. A wide box stacked on top of 4 smaller boxes didn't look nice and the stretched image and gif were extremely blurry */
+.mywork img {
     height: 450px;
     width: 800px;
     margin: 0 75px 25px 25px;
@@ -210,14 +211,6 @@ body {
 .static:hover {
     opacity: 0;
     cursor:pointer;
-}
-
-.mywork img {
-    height: 450px;
-    width: 800px;
-    margin: 0 75px 25px 25px;
-    border: solid;
-    border-color: var(--c3);
 }
 
 footer {
