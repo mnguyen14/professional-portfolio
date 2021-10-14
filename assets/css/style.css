@@ -57,11 +57,6 @@ body {
     text-decoration: none;
 }
 
-.header nav ul li a::before {
-    content: "⚫️";
-    font-family: cursive;
-}
-
 .aboutme {
     width: 80%;
     margin-left: 20px;
@@ -144,12 +139,12 @@ body {
     color: var(--c1);
     background-color: var(--c3);
     border-color: var(--c3);
-    width: 160px;
+    width: 200px;
     position: absolute;
     top: 50px;
     left: 20px;
     padding: 0 20px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .box2 {
@@ -158,12 +153,12 @@ body {
     color: var(--c1);
     background-color: var(--c3);
     border-color: var(--c3);
-    width: 160px;
+    width: 200px;
     position: absolute;
     top: 50px;
     left: 925px;
     padding: 0 20px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .box3 {
@@ -172,12 +167,12 @@ body {
     color: var(--c1);
     background-color: var(--c3);
     border-color: var(--c3);
-    width: 160px;
+    width: 200px;
     position: absolute;
     top: 528px;
     left: 20px;
     padding: 0 20px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .box4 {
@@ -186,12 +181,12 @@ body {
     color: var(--c1);
     background-color: var(--c3);
     border-color: var(--c3);
-    width: 160px;
+    width: 200px;
     position: absolute;
     top: 528px;
     left: 925px;
     padding: 0 20px;
-    z-index: 1;
+    z-index: 2;
 }
 
 /* I understand that my initial work should be bigger than the rest but I do not like the way it looks and am willing to accept docked points for it to look more aesthetically 
@@ -204,13 +199,35 @@ pleasing to my eyes. A wide box stacked on top of 4 smaller boxes didn't look ni
     border-color: var(--c3);
 }
 
-.static {
+#pic1 {
+    position:absolute;
+    left: 0;
+}
+
+#pic2 {
+    position:absolute;
+    left: 905px;
+}
+
+#pic3 {
     position: absolute;
+    left: 0;
+    top: 540px;
+}
+
+#pic4 {
+    position: absolute;
+    left: 905px;
+    top: 540px;
 }
 
 .static:hover {
     opacity: 0;
     cursor:pointer;
+}
+
+.gif {
+    z-index: 0;
 }
 
 footer {
