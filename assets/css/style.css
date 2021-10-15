@@ -286,6 +286,23 @@ footer ul li a {
         left: 20px;
     }
 
+    #pic2 {
+        position:absolute;
+        top: 538px;
+        left: 0;
+    }
+    
+    #pic3 {
+        position: absolute;
+        top: 1024px;
+    }
+    
+    #pic4 {
+        position: absolute;
+        top: 1493px;
+        left: 0;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -314,6 +331,23 @@ footer ul li a {
     .box4 {
         top: 1229px;
         left: 20px;
+    }
+
+    #pic2 {
+        position:absolute;
+        top: 455px;
+        left: 0;
+    }
+    
+    #pic3 {
+        position: absolute;
+        top: 845px;
+    }
+    
+    #pic4 {
+        position: absolute;
+        top: 1240px;
+        left: 0;
     }
 }
 
